@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -16,6 +17,9 @@ namespace AzureUpload.Controllers
 			while (counter > 0)
 			{
 				counter--;
+
+				if(counter%100==0)
+					Trace.TraceInformation("Counting down... now at "+counter);
 			}
 
 			return View();
