@@ -12,6 +12,12 @@ namespace AzureUpload.Controllers
 		{
 			ViewBag.Message = "Modify this template to jump-start your ASP.NET MVC application.";
 
+			var counter = 10000;
+			while (counter > 0)
+			{
+				counter--;
+			}
+
 			return View();
 		}
 
